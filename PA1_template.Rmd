@@ -91,7 +91,7 @@ per_day <- activity%>%
 head(per_day)
 ```
 <br><br>Next we create a histogram using the [`geom_histogram`](http://docs.ggplot2.org/current/geom_histogram.html) function from `ggplot2`.  Note, we are also using the Economist theme from `ggthemes` to create a polished look.  <br><br>
-```{r historgram_plot, echo=FALSE, message=FALSE,warning=FALSE}
+```{r historgram_plot, echo=TRUE, message=FALSE,warning=FALSE}
 g <- ggplot(per_day,aes(total.steps))
 g + geom_histogram(binwidth = 1000, aes(fill=..count..))+
         theme_economist()+
@@ -138,7 +138,7 @@ geom_text(aes(label=ifelse(interval_activity$average.steps == max(interval_activ
         labs(x="5 minute intervals",y="Average Steps",
              title="What is the busiest 5-minute interval?")
 ```
-
+![alt text](./PA1_template_files/figure-html/max_interval-1.png "Second plot")
 
 ```{r max_print, echo=TRUE}
 print(paste0("The 5-minute interval with the maximum average steps is ",
@@ -197,7 +197,7 @@ g + geom_histogram(binwidth = 1000, aes(fill=..count..))+
         labs(x="Steps taken in a single day",y="Count",
              title="Filled: What is the most frequent number of steps taken in a day?")
 ```
-
+![alt text](./PA1_template_files/figure-html/filled_plot-1.png "Third plot")
 Here is the mean and median.
 ```{r filled_mean_n_median, echo=TRUE,warnings=FALSE,message=FALSE}
 # The mean
@@ -236,3 +236,4 @@ m + geom_line(aes(colour=wDay)) +
         facet_grid(.~wDay)+ scale_fill_brewer(palette = "Paired")+theme_economist()+labs(x="5 minute intervals",y="Average Steps",
              title="Weekend vs. Week: What is the busiest 5-minute interval?")
 ```
+![alt text](./PA1_template_files/figure-html/final_plot-1.png "Final plot")
