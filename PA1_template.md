@@ -18,7 +18,9 @@ I also [completed this assignment in a Jupyter Notebook Kernel for R langauge](h
 
 \###########################################################
  Check for required packages and load 
-############################################################
+\############################################################
+
+
 
 
 ```r
