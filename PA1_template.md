@@ -1,7 +1,7 @@
 # Reproducible Research: Peer Assessment 1
-\###################################################################
- Information
-###################################################################
+\###################################################################<br>
+ Information<br>
+\###################################################################<br>
 
 *Created by:  <span style ="color :blue"> Linwood Creekmore III  </span> <br>
 Started Mar 2016 <br>
@@ -16,9 +16,9 @@ Repoducible analysis is all about equipping independent researchers and readers 
 I also [completed this assignment in a Jupyter Notebook Kernel for R langauge](https://github.com/linwoodc3/RepData_PeerAssessment/blob/master/CourseProject1.ipynb). The Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text, which matches exactly what literate statistical programming aims to be (from our lectures). [Learn more about using Jupyter Notebook with R here](http://irkernel.github.io/running/).
 
 
-\###########################################################
- Check for required packages and load 
-\############################################################
+\###########################################################<br>
+ Check for required packages and load <br>
+\############################################################<br>
 
 
 
