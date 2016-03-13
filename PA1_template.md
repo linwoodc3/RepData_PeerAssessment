@@ -12,6 +12,9 @@ Github = https://github.com/linwoodc3 <br>*
 
 Repoducible analysis is all about equipping independent researchers and readers with the tools, data, and analytic code needed to reproduce the results of a study or scientific endeavor. This study uses RMarkdown; read [knitr in a knutshell](http://kbroman.org/knitr_knutshell/) for more information and tricks. In this context, the task explores personal activity monitoring data.  The tools used for plotting and data transformation are imported below.
 
+# Alternative Literate Statistical Programming
+I also [completed this assignment in a Jupyter Notebook Kernel for R langauge](https://github.com/linwoodc3/RepData_PeerAssessment/blob/master/CourseProject1.ipynb). The Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text, which matches exactly what literate statistical programming aims to be (from our lectures). [Learn more about using Jupyter Notebook with R here](http://irkernel.github.io/running/).
+
 
 \###################################################################
  Check for required packages and load 
@@ -299,7 +302,8 @@ print(paste0(median(filled_activity$total.steps)))
 ```
 ## [1] "10766.1886792453"
 ```
-The mean and median changed slighly but not much in terms of the total magnitude.  The mean is pretty much the same.  The impact is that the histogram values are higher for the 
+The mean and median changed slighly but not much in terms of the total magnitude.  The mean is pretty much the same.  The impact is that the histogram values are higher for the filled dataset. 
+
 ## Are there differences in activity patterns between weekdays and weekends?
 Understanding the difference in weekday and weekend patterns means we must convert our dates to representations of days of the week, and then classify them into weekend and weekday factors. A great walkthrough was on stackoverflow, [converting weekdays to week and weekend factors.](from stackoverflow http://stackoverflow.com/questions/28893193/creating-factor-variables-weekend-and-weekday-from-date) 
 
