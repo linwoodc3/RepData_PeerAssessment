@@ -163,7 +163,8 @@ Good!  The `NA`s are confined to the `steps` column.  What percentage is missing
 # Percentage of NA columns in steps.
 sum(is.na(activity$steps))/length(activity$steps)*100
 ```
-13%.  Not bad!.  Let's replace the missing numbers with the mean and create a new `filled_activity` dataset.
+### Strategy to fill missing values
+13%.  Not bad!.  Let's replace the missing numbers with the mean and create a new `filled_activity` dataset.  To be clear, we use a simple method to just insert the average in place of the NA values.  We use dplyr chaining to complete this.
 
 ```{r NA_replace, echo=TRUE}
 new_activity <- activity%>%

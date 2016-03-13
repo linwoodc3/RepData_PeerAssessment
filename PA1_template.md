@@ -133,6 +133,8 @@ g + geom_histogram(binwidth = 1000, aes(fill=..count..))+
 ```
 
 ![](PA1_template_files/figure-html/historgram_plot-1.png)
+![alt text](./PA1_template_files/figure-html/historgram_plot-1.png "First plot")
+
 With an understanding of frequently occuring values, let's look at the overall mean and median of the *total number* of steps taken per day (e.g. over the entire data set).
 
 
@@ -180,7 +182,7 @@ geom_text(aes(label=ifelse(interval_activity$average.steps == max(interval_activ
 ```
 
 ![](PA1_template_files/figure-html/max_interval-1.png)
-
+![alt text](./PA1_template_files/figure-html/max_interval-1.png "Second plot")
 
 
 ```r
@@ -226,7 +228,8 @@ sum(is.na(activity$steps))/length(activity$steps)*100
 ```
 ## [1] 13.11475
 ```
-13%.  Not bad!.  Let's replace the missing numbers with the mean and create a new `filled_activity` dataset.
+### Strategy to fill missing values
+13%.  Not bad!.  Let's replace the missing numbers with the mean and create a new `filled_activity` dataset.  To be clear, we use a simple method to just insert the average in place of the NA values.  We use dplyr chaining to complete this.
 
 
 ```r
@@ -276,7 +279,7 @@ g + geom_histogram(binwidth = 1000, aes(fill=..count..))+
 ```
 
 ![](PA1_template_files/figure-html/filled_plot-1.png)
-
+![alt text](./PA1_template_files/figure-html/filled_plot-1.png "Third plot")
 Here is the mean and median.
 
 ```r
@@ -365,3 +368,4 @@ m + geom_line(aes(colour=wDay)) +
 ```
 
 ![](PA1_template_files/figure-html/final_plot-1.png)
+![alt text](./PA1_template_files/figure-html/final_plot-1.png "Final plot")
