@@ -44,9 +44,9 @@ library(ggplot2)
 [`RColorBrewer`](http://www.r-bloggers.com/r-using-rcolorbrewer-to-colour-your-figures-in-r/), [`ggplot2`](http://www.r-bloggers.com/ggplot2-2-1-0/), and [`ggthemes`](https://cran.r-project.org/web/packages/ggthemes/vignettes/ggthemes.html) are all used for visualization, while [`dplyr`](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) and [`tidyr`](http://blog.rstudio.org/2014/07/22/introducing-tidyr/) support data cleaning and transformation.  <br><br>
 
 
-\###############################################################################
-# Looking for locations of files
-###############################################################################
+\#####################################################################<br>
+Looking for locations of files<br>
+\#####################################################################<br>
  
 
 ```r
